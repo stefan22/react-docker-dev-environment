@@ -1,0 +1,22 @@
+Able to get file into container
+
+
+
+
+
+
+
+docker run -it --rm -v ${PWD}/ui:/app node:13.12.0-alpine sh
+
+
+
+ - it allows u to exec into container.
+ - mount code in local dev into a container (ui-app dir)
+ - access shell off linux container node alpine image
+
+that gives u access to the container app
+
+ls to see more
+cd to app to find text file
+
+
