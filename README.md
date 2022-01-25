@@ -56,3 +56,13 @@ RUN
 
 
 
+
+### docker-compose
+
+- RUN
+
+Remove any running docker images and run
+
+`docker-compose up --build`
+
+

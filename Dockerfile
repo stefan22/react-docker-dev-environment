@@ -10,7 +10,13 @@ COPY ./ui ./
 
 
 RUN npm install
-RUN npm install react-scripts@5.0.0
+RUN npm install -D webpack-cli -g
+RUN npm install react-scripts@5.0.0 -g
+
+
+
+
+
 
 # start app
 CMD ["npm","start"]
