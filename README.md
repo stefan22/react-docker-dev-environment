@@ -9,6 +9,7 @@ TEST:
 
 Create a `ui` dir with a `test file` in it.
 
+
 RUN:
 
 ```
@@ -36,6 +37,22 @@ docker build -t reactdock .
 ___reactdock___ is new image off base image that can be used to run a react app.
 
 
+<br />
+
+
+
+<kbd>app container</kbd>
+
+<br />
+
+![](/assets/images/exec.png)
+
+
+<br />
+
+
+------------------------------------------------
+
 
 RUN
 
@@ -44,14 +61,11 @@ RUN
 
 
 
-
-<kbd>app container</kbd>
-![](/assets/images/exec.png)
-
+<kbd>reactdock container</kbd>
 
 <br />
 
-<kbd>reactdock container</kbd>
+
 ![](/assets/images/reactdock.png)
 
 
