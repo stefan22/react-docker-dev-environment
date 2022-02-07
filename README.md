@@ -1,49 +1,44 @@
-# react-docker-dev-environment
-
-React dev environment with docker/docker-compose
-
-
-Requires: docker-cli
-
-TEST:
-
-Create a `ui` dir with a `test file` in it.
+# React-docker-dev-environment :rocket:
+> React dev environment with docker
 
 
-RUN:
+Requires: `React,Node,Npm,Docker,Docker-cli`
+
+##### TEST:
+
+- Create a `ui` dir with a `test file` in it.
+
+
+##### RUN:
 
 ```
-docker run -it --rm -v ${PWD}/ui:/app node:<VERSION>-alpine sh
+>$ docker run -it --rm -v ${PWD}/ui:/app node:<VERSION>-alpine sh
 ```
 
 
-It downloads a node alpine image (docker registry) then exec into the container and access the shell.       
-CD into container app to find the test.txt file.
+It downloads a node alpine image (docker registry) then exec into the container and access the shell.  
 
-If it works then this is where you'll mount the react app.
-Remove ui folder.
+##### TEST:
 
-`
-npx create-react-app ui
-`
+- `CD` into container app, and locate `test.txt` file.
+-  If found there,then remove ui folder
+-  Mount React app here: `npx create-react-app ui`
 
-ADD Dockerfile
+##### Build docker image 
 
-`
-docker build -t reactdock .
-`
+- Create Dockerfile
+- Building image off node alpine: `docker build -t reactdock`
+- ***reactdock*** is now a new image built off the alpine 'base' image, and
+  it can be used to run a react application.
 
-
-___reactdock___ is new image off base image that can be used to run a react app.
 
 
 <br />
 
 
 
-<kbd>app container</kbd>
+<kbd>Mounted app container</kbd>
 
-<br />
 
 ![](/assets/images/exec.png)
 
@@ -54,29 +49,37 @@ ___reactdock___ is new image off base image that can be used to run a react app.
 ------------------------------------------------
 
 
-RUN
+##### RUN Docker image
 
-`docker run -it --rm -v ${PWD}/ui:/app -p 3001:3000 -e CHOKIDAR_USEPOLLING=true reactdock
+- Flags: it (interactive), rm (remove afterwards), v (mounting), p (ports:3001 local to env and 3000 local to container), e(env polling changes)
+
+`docker run -it --rm -v ${PWD}/ui:/app -p 3001:3000 -e CHOKIDAR_USEPOLLING=true <imageName>
 `
-
-
-
-<kbd>reactdock container</kbd>
-
 <br />
+
+<kbd>Mounted reactdock container</kbd>
 
 
 ![](/assets/images/reactdock.png)
 
 
+<br />
+
+### Docker-compose option to build image/ run container
+
+- Create `docker-compose` file
+- Remove any running docker images, add exec flags to compose file
+- Type: `docker-compose up --build`
 
 
-### docker-compose
+### Running this repository
 
-- RUN
-
-Remove any running docker images and run
-
-`docker-compose up --build`
+- Clone repository
+- Read top/bottom if needed
+- ***Only type this*** in terminal: `docker-compose up --build` to create image/ run container.
 
 
+##### [Docker Docs](https://docs.docker.com/go/guides/)
+
+
+:100:

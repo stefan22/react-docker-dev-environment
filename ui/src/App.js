@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { Button } from '@material-ui/core'
 import './App.css';
 
 function App() {
@@ -7,11 +8,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
         </p>
        
-     React tr 30
-     
+     React 3K sl
+     <Button size='small' variant='contained' color='secondary'>
+       Material UI Test button
+     </Button>
       </header>
     </div>
   );
