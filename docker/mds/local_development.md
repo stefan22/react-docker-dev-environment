@@ -1,7 +1,7 @@
 # Local Development Environments
 
 
-<img src="/images/localdev.png" width="360" />
+<img src="/assets/images/localdev.png" width="360" />
 
 
 ## Workflow:
