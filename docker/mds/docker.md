@@ -1,7 +1,7 @@
 
 # Docker
 
- ![Docker](/images/docker-logo.jpeg)
+ ![Docker](/assets/images/docker-logo.jpeg)
 
 Installing docker means:      
     - Installing CLI     
