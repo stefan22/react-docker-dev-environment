@@ -1,6 +1,6 @@
 # Basic Containers
 
-![Containers](/images/jar.jpeg)
+![Containers](/assets/images/jar.jpeg)
 
 
 ## Host and Containers are independent from each other
