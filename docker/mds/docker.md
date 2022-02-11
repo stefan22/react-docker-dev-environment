@@ -68,7 +68,7 @@ docker run -it ubuntu
         |
         v
 ```
-&nbsp; &nbsp;&nbsp;      ![](/images/helloword.png)    &nbsp; &nbsp;// something like this
+&nbsp; &nbsp;&nbsp;      ![](/assets/images/helloword.png)    &nbsp; &nbsp;// something like this
 
 
 
