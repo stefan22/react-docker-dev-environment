@@ -3,7 +3,7 @@
 Front Docker's point of view all containers are basically the same, and the distiction made between background and or foreground containers is for the most arbritary.     
 All containers run the same way, and it is always possible to detach and reattach to a container.
 
-<img src="/images/dockarch.png" width="900" height="360" alt="Docker architecture">
+<img src="/assets/images/dockarch.png" width="900" height="360" alt="Docker architecture">
 
 ### Detach from an interactive container with:
 
@@ -41,7 +41,7 @@ docker run -d jpetazzo/clock
 ```
 
 
-<img src="/images/running_containers.png" alt="Containers" />
+<img src="/assets/images/running_containers.png" alt="Containers" />
 
 
 - `Docker ps`  refers to containers - it will return only ***running containers***
@@ -66,4 +66,4 @@ docker logs 123   //these are the first 3 from container's ID
 - Avoid getting the entire log with ***tail***
 - Follow logs in ***real time*** with `tail -f`
 
-<img src="/images/docker-tail.png" alt="Docker tail">
+<img src="/assets/images/docker-tail.png" alt="Docker tail">
