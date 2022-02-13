@@ -1,4 +1,8 @@
-![](https://img.shields.io/github/last-commit/google/skia.svg) [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react) &nbsp; [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/react-docker-dev-environment.git)
+![GitHub last commit](https://img.shields.io/github/last-commit/stefan22/react-docker-dev-environment?color=red&style=flat-square) &nbsp; [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react) &nbsp; [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/react-docker-dev-environment.git)
+
+
+
+
 
 # React-docker-dev-environment :rocket:
 > React dev environment with docker
