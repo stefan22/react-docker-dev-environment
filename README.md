@@ -7,8 +7,10 @@
 # React-docker-dev-environment :rocket:
 > React dev environment with docker
 
+```js
+Requires: React,Node,Npm,Docker,Docker-cli
 
-Requires: `React,Node,Npm,Docker,Docker-cli`
+```
 
 ##### TEST:
 
@@ -22,7 +24,19 @@ Requires: `React,Node,Npm,Docker,Docker-cli`
 ```
 
 
-It downloads a node alpine image (docker registry) then exec into the container and access the shell.  
+<br />
+
+
+<p>
+  <kbd>
+    It downloads a node alpine image (docker registry) then exec into the container and access the shell.
+  </kbd>
+
+
+</p>
+
+<br />
+
 
 ##### TEST:
 
