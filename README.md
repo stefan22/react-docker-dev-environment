@@ -1,3 +1,5 @@
+![](https://img.shields.io/github/last-commit/google/skia.svg) [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
+
 # React-docker-dev-environment :rocket:
 > React dev environment with docker
 
