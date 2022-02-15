@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/stefan22/react-docker-dev-environment?color=red&style=flat-square) &nbsp; [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react) &nbsp; [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/react-docker-dev-environment.git)
+[![DeepScan grade](https://deepscan.io/api/teams/16862/projects/20203/branches/544930/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16862&pid=20203&bid=544930) &nbsp; ![GitHub last commit](https://img.shields.io/github/last-commit/stefan22/react-docker-dev-environment?color=red&style=flat-square) &nbsp; [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react) &nbsp; [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https:/github.com/stefan22/react-docker-dev-environment.git)
 
 
 
