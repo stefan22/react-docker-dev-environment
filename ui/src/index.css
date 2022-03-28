@@ -1,13 +1,240 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;600;&display=swap");
+
+/**
+@ colors
+*  –––––– */
+
+$pri:  #f44336;
+$pribg: #f8f8ff;
+$sec:   #062886;
+$white: #fffafa;
+$black: #484848;
+
+/**
+@ font-sizes
+* -----------*/
+
+$xlg: 3.5rem;
+$lg: 3.00rem;
+$h1: 2.25rem;
+$h2: 2rem;
+$h3: 1.8rem;
+$h4: 1.55rem;
+$h5: 1.4rem;
+$h6: 1.25rem;
+$p: 1.1rem;
+$reg: 1rem;
+$small: 0.9rem;
+$xsmall: .7rem;
+
+
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  color: $black;
+  text-align: center;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-family: "Poppins, Tahoma, Verdana, sans-serif ";
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins, Tahoma, Verdana, sans-serif ";
+}
+
+h1 {
+  font-size: $h1;
+}
+h2 {
+  font-size: $h2;
+}
+h3 {
+  font-size: $h3;
+}
+h4 {
+  font-size: h4;
+}
+h5 {
+  font-size: $h5;
+}
+h6 {
+  font-size: $h6;
+}
+
+input,
+textarea,
+fieldset {
+  border: none;
+}
+a,
+input {
+  outline: none;
+  text-decoration: none;
+}
+
+img,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+/* remove list styles,
+// padding ul,ol elems
+// with class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+  font: inherit; /* inherit fonts for inputs */
+  transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.app-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width:768px) {
+  button.doSignOut {
+    display: flex;
+    padding: 0 1.75rem;
+  }
+}
+
+/* Page Group transition ------------------------------------------ */
+
+
+.fade-appear,
+.fade-enter {
+  opacity: 1;
+  animation-delay: 0ms;
+  z-index: 20;
+}
+
+
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  z-index: -10;
+  animation: fade-out .55s ease-in-out 0ms;
+}
+
+
+.fade-appear-active,.fade-enter.fade-enter-active {
+  opacity: 1;
+  z-index: 10;
+  animation: fade-in .75s ease-in 0ms;
+}
+
+
+
+.fade-enter-done,
+.fade-exit {
+  opacity: 1;
+  z-index: 20;
+}
+
+
+@media only screen and (max-width: 414px) {
+  .dp-signup-wrapper {
+    top: 104px;
+  }
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+
+@keyframes sideOut {
+    from { 
+      opacity: 1;
+      right: 0px;
+    }
+    to { 
+      opacity: 0 ;
+      right: -350px;
+    }
+}
+
+@keyframes sideIn {
+    from { 
+      opacity: 0;
+      right: -350px;
+    }
+
+      to { 
+        opacity: 1;
+        right: 0px;
+      }
+}
+
+
+.loadRipple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loadRipple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.loadRipple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+
+@keyframes ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
 }
